@@ -14,34 +14,37 @@
             <div class="calculatorScreen">
                 <div class="screenLine screenLine1"></div>
                 <div class="screenLine screenLine2"></div>
-                <div class="screenLine screenLine3">0</div>
+                <div class="screenLine screenLine3"></div>
                 <div class="screenLine screenLine4"></div>
             </div>
             <div class="calculatorKeyboard">
                 <div class="kbCol">
-                    <button data-key="operand" data-button="7">7</button>
-                    <button data-key="operand" data-button="4">4</button>
-                    <button data-key="operand" data-button="1" class="">1</button>
-                    <button data-key="erase" data-button="C" class="erase" tabindex="-1">C</button>
+                    <button data-key="key" class="operator" data-button="+">+</button>
+                    <button data-key="key" class="operator" data-button="-">-</button>
+                    <button data-key="clear" class="clear" data-button="C">C</button>
                 </div>
                 <div class="kbCol">
-                    <button data-key="operand" data-button="8">8</button>
-                    <button data-key="operand" data-button="5">5</button>
-                    <button data-key="operand" data-button="2">2</button>
-                    <button data-key="operand" data-button="0">0</button>
+                    <button data-key="key" data-button="7">7</button>
+                    <button data-key="key" data-button="4">4</button>
+                    <button data-key="key" data-button="1">1</button>
+                    <button data-key="key" class="fraction" data-button=".">.</button>
                 </div>
                 <div class="kbCol">
-                    <button data-key="operand" data-button="9">9</button>
-                    <button data-key="operand" data-button="6">6</button>
-                    <button data-key="operand" data-button="3">3</button>
-                    <button data-key="operand" class="fraction" data-button=".">.</button>
+                    <button data-key="key" data-button="8">8</button>
+                    <button data-key="key" data-button="5">5</button>
+                    <button data-key="key" data-button="2">2</button>
+                    <button data-key="key" data-button="0">0</button>
                 </div>
                 <div class="kbCol">
-                    <button class="operator" data-key="operator" data-button="/">÷</button>
-                    <button class="operator" data-key="operator" data-button="*">x</button>
-                    <button class="operator" data-key="operator" data-button="+">+</button>
-                    <button class="operator" data-key="operator" data-button="-">-</button>
-                    <button class="result" data-key="result" data-button="=">=</button>
+                    <button data-key="key" data-button="9">9</button>
+                    <button data-key="key" data-button="6">6</button>
+                    <button data-key="key" data-button="3">3</button>
+                    <button data-key="erase" class="erase" data-button="e">⌫</button>
+                </div>
+                <div class="kbCol">
+                    <button data-key="key" class="operator" data-button="/">÷</button>
+                    <button data-key="key" class="operator" data-button="*">x</button>
+                    <button data-key="result" class="result" data-button="=">=</button>
                 </div>
             </div>
         </div>
