@@ -1,3 +1,7 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .container{
     display: flex;
     flex-direction: column;
@@ -52,9 +56,16 @@
     font-size: 12px;
 }
 
+
 .screenLine4{
     height:40px;
     font-size: 32px;
+}
+
+.screenLine5{
+    height:24px;
+    font-size: 24px;
+    color: darkgreen;
 }
 
 @keyframes screenLine {
@@ -87,6 +98,7 @@ button{
     border-radius: 10px;
     transition: 0.1s;
     box-shadow: inset 6px 6px 6px rgba(255,255,255,.7), inset -4px -4px 4px rgba(0,0,0,.1), 0px 2px 1px rgba(0,0,0,.1);
+    cursor: pointer;
 }
 
 
@@ -97,20 +109,24 @@ button{
     box-shadow: 0px 0px 3px;
 }
 
-.fraction {
+[data-button="."] {
     background-color: rgba(216, 255, 199, 0.406);
 }
 
-.operator {
+[data-button="/"],[data-button="*"],[data-button="+"],[data-button="-"] {
     background-color: rgb(255, 255, 255);
 }
 
-.clear, .erase {
+[data-button="AC"],[data-button="C"] {
     background-color: lightcyan;
 }
 
-.result {
+[data-button="="] {
     background-color: orange;
+}
+
+[data-button="undo"],[data-button="redo"] {
+    background-color: rgb(252, 243, 188);
 }
 
   @keyframes slide-left {
